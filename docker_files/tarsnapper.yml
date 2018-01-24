@@ -1,0 +1,11 @@
+deltas: 1d 7d 30d
+
+delta-names:
+  important: 1d 7d 30d 90d 180d 
+  super-important: 1h 1d 30d 90d 360d
+
+# A job's target sets the name of the created archive
+target: $name-$date
+
+# You can also include jobs from separate files
+include-jobs: /etc/tarsnapper/*.yml
